@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Reto1_DadoParImpar"/>
+        <attribute name="authors" value="sebas"/>
+        <attribute name="about" value="Lanza un dado y clasifica paridad."/>
+        <attribute name="saved" value="2025-11-24 06:21:59 p.&#160;m."/>
+        <attribute name="created" value="VVNVQVJJTztERVNLVE9QLUo5SVVKQzc7MjAyNS0xMS0yNDswNTo1NDowNiBwLsKgbS47MzIxNw=="/>
+        <attribute name="edited" value="VVNVQVJJTztERVNLVE9QLUo5SVVKQzc7MjAyNS0xMS0yNDswNjoyMTo1OSBwLsKgbS47MTszMzI4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="dado" type="Integer" array="False" size=""/>
+            <output expression="&quot; Reto 1: Lanzamiento de Dado &quot;" newline="True"/>
+            <assign variable="dado" expression="Random(6) + 1"/>
+            <output expression="&quot;Dado lanzado: &quot; &amp; dado" newline="True"/>
+            <if expression="dado % 2 == 0">
+                <then>
+                    <output expression="&quot;El n&#250;mero &quot; &amp; dado &amp; &quot; es PAR.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;El n&#250;mero &quot; &amp; dado &amp; &quot; es IMPAR.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

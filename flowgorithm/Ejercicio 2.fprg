@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ValidadorParImpar"/>
+        <attribute name="authors" value="sebas"/>
+        <attribute name="about" value="Reto condicional 2: Solicita un n&#250;mero y verifica si es PAR o IMPAR. (VERSI&#211;N FINAL CON CORRECCI&#211;N ABS)"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero" type="Integer" array="False" size=""/>
+            <output expression="&quot; VALIDADOR DE N&#218;MEROS PAR / IMPAR &quot;" newline="True"/>
+            <output expression="&quot;Por favor, ingresa un n&#250;mero entero (positivo o negativo):&quot;" newline="True"/>
+            <input variable="numero"/>
+            <if expression="Abs(numero) % 2 == 0">
+                <then>
+                    <output expression="&quot;&#161;El n&#250;mero &quot; &amp; numero &amp; &quot; es PAR!&quot;" newline="True"/>
+                    <output expression="&quot;Detalle: Se puede dividir exactamente por 2.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;&#161;El n&#250;mero &quot; &amp; numero &amp; &quot; es IMPAR!&quot;" newline="True"/>
+                    <output expression="&quot;Detalle: Al dividirlo por 2, sobra 1.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

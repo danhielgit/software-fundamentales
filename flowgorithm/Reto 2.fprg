@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="sebas"/>
+        <attribute name="authors" value="sebas"/>
+        <attribute name="about" value="Lanza un dado varias veces mostrando cada tiro y sumando el total"/>
+        <attribute name="saved" value="2025-11-24 06:22:08 p.&#160;m."/>
+        <attribute name="created" value="VVNVQVJJTztERVNLVE9QLUo5SVVKQzc7MjAyNS0xMS0yNDswNjowNjozMCBwLsKgbS47MzIxMg=="/>
+        <attribute name="edited" value="VVNVQVJJTztERVNLVE9QLUo5SVVKQzc7MjAyNS0xMS0yNDswNjoyMjowOCBwLsKgbS47MTszMzIz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <declare name="suma" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="dado" type="Integer" array="False" size=""/>
+            <output expression="&quot;Reto: Lanzamiento mltiple de dado &quot;" newline="True"/>
+            <output expression="&quot;Cuantas veces desea lanzar el dado?&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="suma" expression="0"/>
+            <assign variable="i" expression="1"/>
+            <while expression="i &lt;= n">
+                <assign variable="dado" expression="Random(6) + 1"/>
+                <output expression="&quot;Lanzamiento &quot; &amp; i &amp; &quot;: &quot; &amp; dado" newline="True"/>
+                <assign variable="suma" expression="suma + dado"/>
+                <assign variable="i" expression="i + 1"/>
+            </while>
+            <output expression="&quot;La suma total de los lanzamientos es: &quot; &amp; suma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
